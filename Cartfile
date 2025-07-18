@@ -1,7 +1,6 @@
 github "robbiehanson/CocoaAsyncSocket" ~> 7.6.3
 github "CocoaLumberjack/CocoaLumberjack" ~> 3.5.2
 github "yeyifeng1991/MMDB-Swift" "fix-deployment-target"
-#github "yeyifeng1991/swift-sodium" "main"
 github "behrang/YamlSwift" "3.4.3"
 github "zhuhaow/tun2socks" ~> 0.7.0
 github "zhuhaow/Resolver" ~> 0.2.0
