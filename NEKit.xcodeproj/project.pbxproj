@@ -263,8 +263,6 @@
 		EFD3218E2E2B34730061C458 /* lwip.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EFD3217D2E2B34720061C458 /* lwip.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD3218F2E2B34730061C458 /* Resolver.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD3217E2E2B34720061C458 /* Resolver.xcframework */; };
 		EFD321902E2B34730061C458 /* Resolver.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EFD3217E2E2B34720061C458 /* Resolver.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		EFD321922E2B40E90061C458 /* Clibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD321912E2B40E90061C458 /* Clibsodium.xcframework */; };
-		EFD321932E2B40E90061C458 /* Clibsodium.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EFD321912E2B40E90061C458 /* Clibsodium.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,7 +297,6 @@
 				EFD3218E2E2B34730061C458 /* lwip.xcframework in CopyFiles */,
 				EFD321902E2B34730061C458 /* Resolver.xcframework in CopyFiles */,
 				EFD321822E2B34730061C458 /* CocoaAsyncSocket.xcframework in CopyFiles */,
-				EFD321932E2B40E90061C458 /* Clibsodium.xcframework in CopyFiles */,
 				EFD321842E2B34730061C458 /* tun2socks.xcframework in CopyFiles */,
 				EFD3218C2E2B34730061C458 /* MMDB.xcframework in CopyFiles */,
 				EFD321862E2B34730061C458 /* CocoaLumberjack.xcframework in CopyFiles */,
@@ -535,7 +532,6 @@
 				EFD321812E2B34730061C458 /* CocoaAsyncSocket.xcframework in Frameworks */,
 				EFD321832E2B34730061C458 /* tun2socks.xcframework in Frameworks */,
 				EFD3217F2E2B34720061C458 /* CocoaLumberjackSwift.xcframework in Frameworks */,
-				EFD321922E2B40E90061C458 /* Clibsodium.xcframework in Frameworks */,
 				EFD3218F2E2B34730061C458 /* Resolver.xcframework in Frameworks */,
 				EFD321872E2B34730061C458 /* Yaml.xcframework in Frameworks */,
 				EFD3218B2E2B34730061C458 /* MMDB.xcframework in Frameworks */,
