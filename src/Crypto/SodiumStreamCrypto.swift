@@ -1,5 +1,6 @@
 import Foundation
 import Sodium
+import Clibsodium
 open class SodiumStreamCrypto: StreamCryptoProtocol {
     public enum Alogrithm {
         case chacha20, salsa20

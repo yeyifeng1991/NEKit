@@ -1,6 +1,6 @@
 import Foundation
 import Sodium
-
+import Clibsodium
 open class Libsodium {
     /// This must be accessed at least once before Libsodium is used.
     public static let initialized: Bool = {
