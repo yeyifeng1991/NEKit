@@ -1,4 +1,4 @@
-github "yeyifeng1991/CocoaAsyncSocket"
+github "yeyifeng1991/CocoaAsyncSocket" ~> 7.6.5
 github "CocoaLumberjack/CocoaLumberjack" ~> 3.5.2
 github "yeyifeng1991/MMDB-Swift" "fix-deployment-target"
 github "yeyifeng1991/swift-sodium" "main"
