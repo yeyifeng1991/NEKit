@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 54;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -488,6 +488,10 @@
 		EFD321912E2B40E90061C458 /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = "../swift-sodium/Clibsodium.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		EFCB19A32E3A3D1300FA9B53 /* ProxyTrojan */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = ProxyTrojan; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		36463A2C1CDCD5EB0040579C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -653,6 +657,7 @@
 		36463A321CDCD5EB0040579C /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EFCB19A32E3A3D1300FA9B53 /* ProxyTrojan */,
 				36B8936C1E17F96000881890 /* ResponseGenerator */,
 				366EB5BE1CDE32BF00E0E942 /* Config */,
 				3650FAE01D27B9F300444E79 /* Crypto */,
@@ -999,6 +1004,9 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				EFCB19A32E3A3D1300FA9B53 /* ProxyTrojan */,
+			);
 			name = "NEKit-macOS";
 			productName = NEKit;
 			productReference = 36463A301CDCD5EB0040579C /* NEKit.framework */;
@@ -1039,6 +1047,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				EFCB19A32E3A3D1300FA9B53 /* ProxyTrojan */,
 			);
 			name = "NEKit-iOS";
 			productName = "iOS Framework";
