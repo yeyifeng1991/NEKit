@@ -245,6 +245,8 @@
 		36E9CD001DD6EEF5003597CE /* QueueFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */; };
 		36E9CD041DD6F0DE003597CE /* Resolver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; };
 		36E9CD051DD6F0DE003597CE /* Resolver.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 360F392B1DD2068E002BED59 /* Resolver.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EFCB1A2F2E3A4B6800FA9B53 /* AES256GCMCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB1A2E2E3A4B6800FA9B53 /* AES256GCMCrypto.swift */; };
+		EFCB1A302E3A4B6800FA9B53 /* AES256GCMCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFCB1A2E2E3A4B6800FA9B53 /* AES256GCMCrypto.swift */; };
 		EFD3217F2E2B34720061C458 /* CocoaLumberjackSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD321762E2B34710061C458 /* CocoaLumberjackSwift.xcframework */; };
 		EFD321802E2B34720061C458 /* CocoaLumberjackSwift.xcframework in CopyFiles */ = {isa = PBXBuildFile; fileRef = EFD321762E2B34710061C458 /* CocoaLumberjackSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EFD321812E2B34730061C458 /* CocoaAsyncSocket.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD321772E2B34710061C458 /* CocoaAsyncSocket.xcframework */; };
@@ -476,6 +478,7 @@
 		36DB3CE91E0CD19000D907DB /* IPMask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPMask.swift; sourceTree = "<group>"; };
 		36E44A011CF2ED4800185DBF /* TUNInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TUNInterface.swift; sourceTree = "<group>"; };
 		36E9CCFE1DD6EEF5003597CE /* QueueFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QueueFactory.swift; path = Tunnel/QueueFactory.swift; sourceTree = "<group>"; };
+		EFCB1A2E2E3A4B6800FA9B53 /* AES256GCMCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AES256GCMCrypto.swift; sourceTree = "<group>"; };
 		EFD321762E2B34710061C458 /* CocoaLumberjackSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaLumberjackSwift.xcframework; path = Carthage/Build/CocoaLumberjackSwift.xcframework; sourceTree = "<group>"; };
 		EFD321772E2B34710061C458 /* CocoaAsyncSocket.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = CocoaAsyncSocket.xcframework; path = Carthage/Build/CocoaAsyncSocket.xcframework; sourceTree = "<group>"; };
 		EFD321782E2B34720061C458 /* tun2socks.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = tun2socks.xcframework; path = Carthage/Build/tun2socks.xcframework; sourceTree = "<group>"; };
@@ -690,6 +693,7 @@
 				3650FAF61D27D64500444E79 /* MD5Hash.swift */,
 				3650FAE41D27BA5300444E79 /* SodiumStreamCrypto.swift */,
 				3650FAE11D27BA0900444E79 /* StreamCryptoProtocol.swift */,
+				EFCB1A2E2E3A4B6800FA9B53 /* AES256GCMCrypto.swift */,
 			);
 			path = Crypto;
 			sourceTree = "<group>";
@@ -1308,6 +1312,7 @@
 				36A503F91CF5D27E00D1FC78 /* DirectProxySocket.swift in Sources */,
 				36B162271CDDA0EA00F24C97 /* GCDTCPSocket.swift in Sources */,
 				362950511D6AE396001A30F6 /* TunnelEvent.swift in Sources */,
+				EFCB1A2F2E3A4B6800FA9B53 /* AES256GCMCrypto.swift in Sources */,
 				36E9CCFF1DD6EEF5003597CE /* QueueFactory.swift in Sources */,
 				3650FAF41D27CD8400444E79 /* CryptoHelper.swift in Sources */,
 				36B162291CDDA0EA00F24C97 /* ProxySocket.swift in Sources */,
@@ -1425,6 +1430,7 @@
 				36C48D611CF88EB60071804F /* SecureHTTPAdapter.swift in Sources */,
 				36C48D721CF88ECF0071804F /* GCDProxyServer.swift in Sources */,
 				362950521D6AE396001A30F6 /* TunnelEvent.swift in Sources */,
+				EFCB1A302E3A4B6800FA9B53 /* AES256GCMCrypto.swift in Sources */,
 				36E9CD001DD6EEF5003597CE /* QueueFactory.swift in Sources */,
 				3650FAF51D27CD8400444E79 /* CryptoHelper.swift in Sources */,
 				36C48D5E1CF88EB60071804F /* SpeedAdapterFactory.swift in Sources */,
@@ -1731,7 +1737,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				INFOPLIST_FILE = "NEKit-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1766,7 +1772,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				INFOPLIST_FILE = "NEKit-iOS/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

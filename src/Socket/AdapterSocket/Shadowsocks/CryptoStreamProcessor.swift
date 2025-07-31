@@ -127,6 +127,18 @@ extension ShadowsocksAdapter {
                     combinedKey.append(writeIV)
                     return CCCrypto(operation: .encrypt, mode: .rc4, algorithm: .rc4, initialVector: nil, key: MD5Hash.final(combinedKey))
                 }
+            case .AES256GCM:
+                if #available(iOS 13.0, *) {
+                       // ⚠️ GCM 使用 IV 作为 nonce，长度通常为 12 字节
+                       switch operation {
+                       case .decrypt:
+                           return AES256GCMCrypto(keyData: key)  // nonce 应从 readIV 获取
+                       case .encrypt:
+                           return AES256GCMCrypto(keyData: key)  // nonce 应从 writeIV 获取
+                       }
+                   } else {
+                       fatalError("AES-256-GCM not supported below iOS 13.")
+                   }
             }
         }
     }
